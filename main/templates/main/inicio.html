@@ -1,0 +1,107 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Cero Multas
+{% endblock %}
+
+{% block content %}
+<main>
+
+    <section class="intro">
+        <h1>¡Bienvenido!</h1>
+        <h3>¿Te multaron? ¡Tenemos una alarma para que no vuelva a pasár!</h3><br>
+        <img src="{% static 'img/ceromultas.jpeg' %}" alt="Cero Multas">
+    </section>
+
+    <section class="content normal">
+        <div>
+            <div>
+                <h2>Nuestro producto</h2>
+                <p>
+                    Después de muchos años trabajando en una solución infalible e innovadora 
+                    para las multas de pico y placa, SOAT y otras, hemos dado con el
+                    producto perfecto. Una cajita que pita y te salva de los comparendos.
+                </p>
+                <p>
+                    Utilizar aplicaciones que te recuerden del pico y placa no evitará al 100% 
+                    que seas multado. A pesar de que tu celular te notifique que ese día 
+                    tienes pico y placa, es posible que el trabajo y el estrés te hagan
+                    olvidar solo algunos minutos después de que hayas leído la notificación.
+                    Además, si no eres la única persona en tu casa que utiliza el o los vehículos
+                    se aumenta la probabilidad de que te multen a ti o a algún miembro de tu 
+                    familia. Precisamente antes de empezar con este proyecto se pensó en algún
+                    problema que no pudiera solucionarse 100% con una aplicación móvil.
+                </p>
+                <p>
+                    En Cero Multas hemos recopilado historias increíbles de varias
+                    personas que han sido víctimas de comparendos y multas para que te
+                    des cuenta de que el el dispositivo CERO MULTAS, te ahorrará tiempo,
+                    dinero y además te dará una tranquilidad que adorarás con el alma.
+                </p>
+                
+                <a target="_blank" href="https://wa.me/573168314501?text=Hola.%20Quiero%20un%20dispositivo%20cero%20multas!" class="cuadrolink" >
+                    <div class="cuadrodentro">
+                        ¡Encargar uno ya!
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        <div>
+            <div class="img-container">
+                <img src="{% static 'img/ahorro.jpeg' %}" alt="ahorro">
+            </div>
+        </div>
+    </section>
+
+    <section class="content reverse">
+        <div>
+            <div class="img-container">
+                <img src="{% static 'img/multado.png' %}" alt="ahorro">
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Historias...</h2>
+                
+                <p><strong>Martín Varela</strong></p>
+                <p>
+                    En Cali, en enero, mucha gente se va de viaje y debido a esto la alcaldía quita
+                    el pico y placa. Me multaron el primer día del año que hubo pico y placa en la
+                    ciudad.
+                </p>
+
+                <p><strong>Juan Oviedo</strong></p>
+                <p>
+                    En Bogotá, cuando cambia el mes un fin de semana tienes pico y placa el
+                    viernes y el lunes. Yo pensé que no tenía pico y placa el lunes y pailander.
+                </p>
+
+                <a target="_blank" href="https://wa.me/573168314501?text=Hola.%20Quiero%20un%20dispositivo%20cero%20multas!" class="cuadrolink" >
+                    <div class="cuadrodentro">
+                        ¡Encargar uno ya!
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        
+    </section>
+
+
+</main>
+
+<div class="btn-whatsapp">   
+    <a href="https://wa.me/573168314501?text=Hola.%20Quiero%20un%20dispositivo%20cero%20multas!" target="_blank">
+        <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="Whatsapp Mantenimientos" style="width: 60;">
+    </a> 
+</div>
+
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/animation.js' %}"></script>
+{% endblock %}
