@@ -58,6 +58,10 @@ header a:hover {
 		max-height:40px;
 	}
 
+	header > div > a {
+		font-size: 28px;
+	}
+
 	header label {
 		float: right;
 		font-size: 20px;
