@@ -1,18 +1,33 @@
-{% extends "main/base.html" %}
 
-{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>
+	    Cero Multas
+    </title>
 
-{% block title %}
-    Cero Multas
-{% endblock %}
-
-{% block content %}
+	<meta charset="UTF-8">
+	<meta name="description" content="Product Website">
+	<meta name="keywords" content="alarma,multas,pico y placa,SOAT">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<a href="/">Cero Multas</a>
+			<nav class="menu">
+				<a href="" class="sombrear">¡Experimenta la tranquilidad de no ser multado!</a>
+			</nav>
+		</div>
+	</header>
 <main>
 
     <section class="intro">
         <h1>¡Alarma Pico y Placa!</h1>
         <h3>¿Te multaron? ¡Tenemos una alarma para que no vuelva a pasár!</h3><br>
-        <img src="{% static 'img/ceromultas.jpeg' %}" alt="Cero Multas">
+        <img src="img/ceromultas.jpeg" alt="Cero Multas">
     </section>
 
     <section class="content normal">
@@ -39,7 +54,7 @@
                     dinero y además te dará tranquilidad a ti y a tus seres queridos.
                 </p>
                 
-                <a target="_blank" href="https://wa.me/573168314501?text=Hola.%20Quiero%20un%20dispositivo%20cero%20multas!" class="cuadrolink" >
+                <a target="_blank" href="https://wa.me/573168314501?text=Hola.%20Quiero%20un%20dispositivo%20Cero%20Multas!" class="cuadrolink" >
                     <div class="cuadrodentro">
                         ¡Hablar con un Vendedor en WhatsApp!
                     </div>
@@ -49,7 +64,7 @@
         </div>
         <div>
             <div class="img-container">
-                <img src="{% static 'img/ahorro.jpeg' %}" alt="ahorro">
+                <img src="img/ahorro.jpeg" alt="ahorro">
             </div>
         </div>
     </section>
@@ -57,7 +72,7 @@
     <section class="content reverse">
         <div>
             <div class="img-container">
-                <img src="{% static 'img/multado.png' %}" alt="ahorro">
+                <img src="img/multado.png" alt="ahorro">
             </div>
         </div>
         <div>
@@ -100,10 +115,17 @@
         <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="Whatsapp Mantenimientos" style="width: 60;">
     </a> 
 </div>
+<footer>
+	<div>
+		<p>Cel: (+57) 3168314501<br>E-mail: juan.oviedo.lutkens@gmail.com<br>¡Sigueme! &copy; 2022</p>
+		<div>
+			<a target="_blank" class="icon-facebook-squared" href="https://www.facebook.com/picoypromo"></a>
+			<a target="_blank" class="icon-instagram" href="https://www.instagram.com/cero_multas/"></a>
+		</div>
+	</div>
+</footer>
+</body>
 
-{% endblock %}
-
-{% block script %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script type="text/javascript" src="{% static 'js/animation.js' %}"></script>
-{% endblock %}
+    <script type="text/javascript" src="js/animation.js"></script>
+</html>
